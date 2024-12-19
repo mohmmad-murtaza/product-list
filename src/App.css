@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(252, 247, 247);
+  color: #333;
+}
+
+/* Header & Navbar Styles */
+header {
+  background-color:#d0be37;
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo h1 {
+  margin-right: 10px;
+}
+.navbar .logo h1:hover{
+    color: black;
+  transform: rotate3d(1, 1, 0, 360deg); 
+  transition: transform 3s;
+}
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/* Product List Styles (Table) */
+
+ .table_Box{
+  background-color:white;
+  height: 50vh;
+  margin:50px 260px;
+  width: 64%;
+ box-shadow: 0 8px 88px rgba(33, 33, 33, 0.2);;
+  
+ }
+ .table_Box h2{
+  position: relative;
+  top: 7%;
+  text-align: center;
+  font-size: 2.5em;
+font-weight:bold;  
+ }
+ .table_Box table {
+  height: 30vh;
+  margin: 3em 1.5em;
+  width: 95%;
+  border-collapse: collapse;
+}
+.table_Box table thead tr th{
+  background-color: #d0be37;
+}
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e2e2e2;
+}
+
+/* Footer Styles */
+footer {
+  background-color:#d0be37;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer p:hover{
+  color: black;
+}
